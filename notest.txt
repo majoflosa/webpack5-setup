@@ -1,0 +1,42 @@
+Specs - webpack config should be able to:
+√ ES6 to ES5
+√ concat & minify js & css
+√ process scss
+√ separate css file
+√ allow normal image paths in css & js
+√ in dev mode, js errors point to source files
+√ in dev mode, css rules are read from scss files
+
+√ live reload
+√ reload css without refreshing
+
+√ autoprefix css
+√ allow async/await
+
+_ allow react
+
+_ multiple entry points with multiple js & css output files
+
+dev npm packages:
+* webpack:
+  - webpack
+  - webpack-cli
+* loaders and loader dependencies
+  - babel-loader
+    - @babel/core
+    - @babel/preset-env
+  - sass-loader
+    - sass
+  - postcss-loader
+    - postcss
+    - postcss-preset-env
+  - css-loader
+* plugins
+  - css-minimizer-webpack-plugin
+  - mini-css-extract-plugin
+  - browser-sync-webpack-plugin
+
+npm install --save-dev webpack webpack-cli babel-loader @babel/core @babel/preset-env sass-loader sass postcss-loader postcss postcss-preset-env css-loader css-minimizer-webpack-plugin mini-css-extract-plugin browser-sync-webpack-plugin
+
+
+* note browser-sync-webpack-plugin@2.3.0 has high severity vulnerabilities
